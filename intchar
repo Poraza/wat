@@ -1,0 +1,14 @@
+#include <stdio.h>
+main()
+{
+int i;
+char wyraz[5]={"A"};
+for (i=0;i<10;i++){
+    getc(&wyraz[0]);
+//  scanf("%c",&wyraz[0]);
+    if((int)wyraz[0]>=97 && (int)wyraz[0]<=122){
+        wyraz[0] = (char)((int)wyraz[0] - 32);
+    }
+    printf("%c",wyraz[0]);
+    }
+}
